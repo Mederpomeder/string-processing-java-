@@ -3,7 +3,7 @@ import java.util.*;
 public class Main{
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		
+		System.out.print("Write number between 0 and 1000000: ");
 		int n = input.nextInt();
 		Dictionary<Integer, String> sundar = new Hashtable<>();
 		sundar.put(0, "нөл");
@@ -36,10 +36,20 @@ public class Main{
 		String ans = "";
 		if(nums.size()==0) {
 		    ans="нөл";
+			// System.out.println(nums.size());
 		}
         else {
 		    for (int i=nums.size()-1; i>=0; i--) {
-		        if (i==5 || i==2) {
+				if (i>=6) {
+					if(nums.get(i)==0) {
+		                continue;
+		            }
+		            else {
+		                System.out.print("Number is too big");
+						break;
+		            }
+				}
+		        else if (i==5 || i==2) {
 		            if(nums.get(i)==0) {
 		                continue;
 		            }

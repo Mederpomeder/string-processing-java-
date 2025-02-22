@@ -1,0 +1,22 @@
+﻿Range of numbers 0-999999
+
+
+Easy case:
+input: 3, 4, 9, 1021
+output: үч, төрт, тогуз, бир миң жыйырма бир
+
+
+special letters are shown as expected(ү, ө, ң)
+
+
+Hard case:
+input: 123456789, 0000000505, 403001
+output: Number is too big, беш жүз беш, төрт жүз үч миң бир 
+
+
+1. We can see that if program receives  number bigger or equal to a million then it informs about it and stops(which is correct according to our number range)
+2. 505 goes after a lot of zeros but program successfully ignores them and outputs right number
+3. 403001 has 3 zeros in it but program doesn’t read them like(нөл жүз) 
+more cases:
+input: 1984, 2025, 320453
+output: бир миң тогуз жүз сексен төрт, эки миң жыйырма беш, үч жүз жыйырма  миң төрт жүз элүү үч
